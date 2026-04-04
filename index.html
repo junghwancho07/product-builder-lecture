@@ -1,15 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Builder</title>
+  <title>Lotto Generator</title>
   <link href='style.css' rel='stylesheet'>
 </head>
 <body>
   <div class="container">
-    <h1>Product Builder</h1>
-    <button id="theme-toggle">Switch Theme</button>
+    <div class="header">
+      <h1>로또 번호 추천</h1>
+      <button id="theme-toggle">테마 변경</button>
+    </div>
+    
+    <div class="lotto-display" id="lotto-numbers">
+      <div class="ball placeholder">?</div>
+      <div class="ball placeholder">?</div>
+      <div class="ball placeholder">?</div>
+      <div class="ball placeholder">?</div>
+      <div class="ball placeholder">?</div>
+      <div class="ball placeholder">?</div>
+    </div>
+
+    <button id="generate-btn" class="main-btn">번호 생성하기</button>
   </div>
   <script defer type="text/javascript" src="main.js"></script>
 </body>
