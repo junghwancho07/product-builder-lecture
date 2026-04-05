@@ -104,3 +104,60 @@ h1 {
 .main-btn:active {
   transform: scale(0.98);
 }
+
+.contact-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--ball-bg);
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--ball-bg);
+  background-color: var(--container-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.submit-btn {
+  padding: 10px;
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+}
