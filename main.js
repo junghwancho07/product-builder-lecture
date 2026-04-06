@@ -42,3 +42,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// SNS Sharing Functions
+function shareKakao() {
+  // Note: Kakao sharing usually requires their SDK. For a quick link share:
+  const url = window.location.href;
+  window.open(`https://sharer.kakao.com/talk/friends/picker/link?url=${encodeURIComponent(url)}`, '_blank');
+}
+
+function shareFacebook() {
+  const url = window.location.href;
+  window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+}
+
+function shareTwitter() {
+  const url = window.location.href;
+  const text = "당첨 기원! Lotto Expert에서 행운의 번호를 생성해보세요.";
+  window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+}
+
+function copyLink() {
+  const url = window.location.href;
+  navigator.clipboard.writeText(url).then(() => {
+    alert("링크가 복사되었습니다! 친구들에게 공유해보세요.");
+  }).catch(err => {
+    console.error('링크 복사 실패:', err);
+  });
+}
